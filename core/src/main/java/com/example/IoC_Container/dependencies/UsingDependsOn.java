@@ -9,9 +9,9 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class UsingDependsOn {
 
-    record Student(String name, int rollNo){};
+    record Student(String name, int rollNo){}
 
-    record Department(String name){};
+    record Department(String name){}
 
     @Bean
     @DependsOn("department")

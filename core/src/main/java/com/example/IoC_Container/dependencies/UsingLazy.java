@@ -16,7 +16,7 @@ public class UsingLazy {
     }
 
     @Configuration
-    class LazyCFG{
+    static class LazyCFG{
         @Bean
         @Lazy
         LazyService lazyService() {

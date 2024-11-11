@@ -89,8 +89,8 @@ public class UsingBeanScopes {
         };
     }
 
-    Consumer<SingleTonBean> singleTonBeanConsumer = singleTonBean-> log.info("Singleton : " + singleTonBean);
-    Consumer<PrototypeBean> prototypeBeanConsumer = prototypeBean-> log.info("Prototype: " + prototypeBean);
+    Consumer<SingleTonBean> singleTonBeanConsumer = singleTonBean-> log.info("Singleton : {}", singleTonBean);
+    Consumer<PrototypeBean> prototypeBeanConsumer = prototypeBean-> log.info("Prototype: {}", prototypeBean);
 
 
 
